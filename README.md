@@ -10,7 +10,7 @@ Follow these steps to install the package:
 
 ```bash
 cd path_to_your_ros2_ws/src
-git clone <repository_url>
+git clone git@github.com:atharvmendhe18/zed2_ros2_gazebo.git
 cd ../
 colcon build --packages-select zed2_ros2_gazebo
 source install/setup.bash
