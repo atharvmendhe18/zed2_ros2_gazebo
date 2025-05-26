@@ -15,8 +15,8 @@ cd ../
 colcon build --packages-select zed2_ros2_gazebo
 source install/setup.bash
 ```
-
-### Steps to Attach ZED2 to Your Robot
+---
+## Steps to Attach ZED2 to Your Robot
 1. Import the ZED2 xacro file into your robot's xacro file:
 
     Add the following line to your robot's xacro file:
@@ -38,9 +38,9 @@ source install/setup.bash
 
     When you spawn your robot in Gazebo, the ZED2 should also be spawned at your desired location.
 
+---
 
-
-### Visualizing Only the ZED2 in Gazebo
+## Visualizing Only the ZED2 in Gazebo
 
 If you want to visualize only the ZED2 in Gazebo, follow these steps:
 
@@ -53,9 +53,7 @@ If you want to visualize only the ZED2 in Gazebo, follow these steps:
     ```bash
     ros2 launch zed2_ros2_gazebo zed2_gazebo.launch.py
     ```
-
-    
-    
+ 
 Notes
 - Ensure that the parent link in the ZED2 xacro file matches the desired link in your robot's URDF/xacro file.
 
